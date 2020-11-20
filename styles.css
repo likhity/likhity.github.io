@@ -1,0 +1,30 @@
+body {
+    font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.myDiv {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: large;
+    margin: 0 auto;
+    font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+    background-color: crimson;
+}
