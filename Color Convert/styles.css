@@ -90,3 +90,39 @@ body {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  .tooltip {
+    position: relative;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: lightgrey;
+    color: rgb(50,50,50);
+    text-align: center;
+    padding: 15px 32px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 150%;
+    left: 25%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: lightgrey transparent transparent transparent;
+  }
