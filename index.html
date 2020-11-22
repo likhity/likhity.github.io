@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Color Tools</title>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Welcome To Color Tools!</h1>
-        <div  class="myDiv">
-            <button class="btn" id="color-convert" onclick="window.location = 'Color Convert/index.html';">Convert Colors!</button>
-            <button class="btn" id="random-color" onclick="window.location = 'Random Color/index.html';">Random Colors!</button>
-            <!-- this is a change -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello! My name is Likhit Vyas Yarramsetti. I am a freshman at ASU studying Computer
+    Science. This is a website where I'm just going to dump every programming project that I've ever done. Thank
+    you for taking the time to check out my stuff!">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vyas' Portfolio</title>
+</head>
+
+<body>
+    <br>
+    <h1 style="text-align: center;">Vyas' Portfolio</h1>
+    <div style="margin: 0 auto; text-align: center; font-size: 20px; width: 600px;">
+        <p> Hello! My name is <b>Likhit Vyas Yarramsetti</b>. You can call me <b>Vyas</b>. I am a freshman at ASU
+            studying
+            Computer Science. This is a website where I'm just going to dump every programming project that I've ever
+            done. Thank you for taking the time to check out my stuff!</p>
+        <p> Most of the stuff you'll see here are just my Web Dev projects. Site doesn't have much currently as I'm
+            still working on tons of projects and building my portfolio.</p>
+    </div>
+    <br>
+    <br>
+    <div class="cards">
+        <div class="card" onclick="window.location = '/JS Games/index.html';">
+            <img src="js.PNG" alt="JS Games" style="width: 100%;" class="card-img">
+            <div class="container">
+                <h3 style="text-align: center;"><b>Javascript Projects</b></h3>
+                <p style="text-align: center;">Some games and stuff I made with Javascript. I'm still learning JS and
+                    it's probably my favorite language so far.
+                </p>
+            </div>
         </div>
-    </body>
+        <div class="card" onclick="window.location = '/Unity Projects/index.html';">
+            <img src="unity.PNG" alt="Color Tools" style="width: 100%;" class="card-img">
+            <div class="container">
+                <h3 style="text-align: center;"><b>Unity Projects</b></h3>
+                <p style="text-align: center;">There are just two games I made
+                    with Unity using C#. Still nowhere near an expert in
+                    C#.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>

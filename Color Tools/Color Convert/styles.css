@@ -1,0 +1,129 @@
+body {
+    font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.copyDiv {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.copy {
+    background-color: rgb(50,50,50);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    font-size: large;
+    font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.copy:hover {
+    background-color: crimson;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: rgb(245, 37, 78);
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: black;
+  }
+
+  .container input:checked:hover ~ .checkmark {
+    background-color: crimson;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .tooltip {
+    position: relative;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: lightgrey;
+    color: rgb(50,50,50);
+    text-align: center;
+    padding: 15px 32px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 150%;
+    left: 25%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: lightgrey transparent transparent transparent;
+  }
+  /* hfruhfih */
