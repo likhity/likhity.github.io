@@ -14,7 +14,7 @@ restartButton.addEventListener('click', function () {
 })
 
 backButton.addEventListener('click', function () {
-    window.location = '/index.html';
+    window.history.back();
 })
 
 function main(currentTime) {

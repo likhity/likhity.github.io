@@ -27,7 +27,7 @@ function startGame() {
         cell.classList.remove(X_CLASS);
         cell.classList.remove(CIRCLE_CLASS);
         cell.removeEventListener('click', handleClick)
-        cell.addEventListener('click', handleClick, {once: true})
+        cell.addEventListener('click', handleClick, { once: true })
     });
     setBoardHoverClass();
     winningMessageElement.classList.remove('show')
@@ -82,7 +82,7 @@ function endGame(draw) {
         winningMessageElement.classList.add('show');
     }
     else {
-        winningMessageTextElement.innerHTML = `${circleTurn ? "&#x25EF; Wins!" : "&#10005; Wins!" }`;
+        winningMessageTextElement.innerHTML = `${circleTurn ? "&#x25EF; Wins!" : "&#10005; Wins!"}`;
         winningMessageElement.classList.add('show');
     }
 }
