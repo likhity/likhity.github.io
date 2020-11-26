@@ -12,6 +12,7 @@ body {
     margin: 0;
     font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif;
     background: black;
+    color: white;
 }
 
 .board {
