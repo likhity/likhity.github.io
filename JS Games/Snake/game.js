@@ -5,13 +5,22 @@ import { outsideGrid } from './grid.js'
 let lastRenderTme = 0;
 let gameOver = false;
 const gameBoard = document.getElementById('game-board')
+const failMessageElement = document.getElementById('failMessage');
+const restartButton = document.getElementById('restartButton');
+const backButton = document.getElementById('backButton');
+
+restartButton.addEventListener('click', function () {
+    window.location = 'index.html';
+})
+
+backButton.addEventListener('click', function () {
+    window.location = '/index.html';
+})
 
 function main(currentTime) {
 
     if (gameOver) {
-        if (confirm('You lost. Press OK to restart.')) {
-            window.location = 'index.html';
-        }
+        failMessageElement.classList.add('show');
         return
     }
     window.requestAnimationFrame(main)
