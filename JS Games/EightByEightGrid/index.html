@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight By Eight Grid</title>
+    <style>
+        .wrapper {
+          display: grid;
+          grid-template-columns: repeat(8, 6rem);
+          grid-gap: 0px;
+          background-color: #fff;
+          color: #444;
+        }
+        .box {
+          background-color: #444;
+          color: #fff;
+          border-radius: 5px;
+          padding: 20px;
+          font-size: 150%;
+        }
+        button {
+          padding: 45px;
+          outline: none;
+          background-color: white;
+          border: 0.75px solid black;
+        }
+        button:active {
+          background-color: white;
+        }
+        .wrapper-parent {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        }
+        * {
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .current-color {
+          padding: 15px;
+          text-align: center;
+          color: white;
+        }
+        </style>
+        <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrapper-parent">
+    <div class="wrapper">
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+    </div>
+  </div>
+
+  <p style="text-align: center;">Press R to use a new random color</p>
+  <p style="text-align: center;">Right click on a cell to reset to white</p>
+  <div class="current-color">current color</div>
+    
+</body>
+</html>
