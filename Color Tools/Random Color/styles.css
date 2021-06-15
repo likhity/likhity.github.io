@@ -1,44 +1,77 @@
 body {
-    font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+  font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
 }
 
 .btn {
-    background-color: rgb(50,50,50);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    font-size: large;
-    margin: 0 auto;
-    font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn:hover {
-    background-color: crimson;
+  background-color: crimson;
+}
+
+.myH1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rem;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.color:first-child {
+  margin-right: 10rem;
 }
 
 .copy {
-    background-color: rgb(50,50,50);
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    font-size: small;
-    margin: 0 auto;
-    font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.color-type {
+  font-size: 1.25rem;
+}
+
+.color-value {
+  font-size: 2rem;
 }
 
 .copy:hover {
-    background-color: crimson;
-    color: blanchedalmond;
+  background-color: crimson;
+  color: blanchedalmond;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 1; /* Firefox */
-  }
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+button {
+  cursor: pointer;
+}

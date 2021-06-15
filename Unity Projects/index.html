@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello! My name is Likhit Vyas Yarramsetti. I am a freshman at ASU studying Computer
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hello! My name is Likhit Vyas Yarramsetti. I am a freshman at ASU studying Computer
     Science. This is a website where I'm just going to dump every programming project that I've ever done. Thank
-    you for taking the time to check out my stuff!">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
+    you for taking the time to check out my stuff!"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
     <title>Vyas' Unity Projects</title>
-</head>
+  </head>
 
-<body>
-    <br>
-    <h1 style="text-align: center;">Vyas' Unity Projects</h1>
-    <div style="margin: 0 auto; text-align: center; font-size: 20px; width: 600px;">
-        <p> Some Unity Projects I've done. I do plan on really developing my Unity and C# skills and be able to create
-            any game I want to. I absolutely <b><i>love</i></b> making games with Unity.
+  <body>
+    <header class="header">
+      <div class="theme-switch">
+        <span class="theme-switch-title">Theme</span>
+        <input
+          type="checkbox"
+          name="theme"
+          id="theme"
+          class="toggle-theme-checkbox"
+          checked
+        />
+        <label for="theme" class="light-label">Light</label>
+        <label for="theme" class="dark-label">Dark</label>
+        <span class="slider"></span>
+      </div>
+      <h1 class="title">Vyas' Unity Projects</h1>
+      <div class="paragraphs">
+        <p>
+          Some Unity Projects I've done. I do plan on really developing my Unity
+          and C# skills and be able to create any game I want to. I absolutely
+          <b><i>love</i></b> making games with Unity.
         </p>
-        <p>If you want to try out any of
-            the games below, click to download the .zip folder of the game, extract the files, and open the .exe file in
-            the folder.</p>
-    </div>
-    <br>
-    <br>
+        <p>
+          If you want to try out any of the games below, click to download the
+          .zip folder of the game, extract the files, and open the .exe file in
+          the folder.
+        </p>
+      </div>
+    </header>
     <div class="cards">
-        <div class="card" onclick="window.location = 'Falling Blocks.zip';">
-            <img src="block.PNG" alt="Falling Blocks" style="width: 100%;" class="card-img">
-            <div class="container">
-                <h3 style="text-align: center;"><b>Falling Blocks</b></h3>
-                <p style="text-align: center;">Incredibly simple game I made when I first learning Unity.</p>
-            </div>
+      <div class="card">
+        <img src="block.PNG" alt="Falling Blocks" class="card-img" />
+        <div class="container">
+          <h3 class="card-title"><b>Falling Blocks</b></h3>
+          <p>Incredibly simple game I made when I first learning Unity.</p>
         </div>
-        <div class="card" onclick="window.location = 'Infiltrate.zip';">
-            <img src="unity.PNG" alt="Shoot Em Up" style="width: 100%;" class="card-img">
-            <div class="container">
-                <h3 style="text-align: center;"><b>Shoot Em Up</b></h3>
-                <p style="text-align: center;">Basic FPS game. I do plan on fully fleshing this game out and releasing
-                    it on Steam.</p>
-            </div>
+      </div>
+      <div class="card" onclick="window.location = 'Infiltrate.zip';">
+        <img
+          src="unity.PNG"
+          alt="Shoot Em Up"
+          style="width: 100%"
+          class="card-img"
+        />
+        <div class="container">
+          <h3 class="card-title">Shoot Em Up</h3>
+          <p>
+            Basic FPS game. I do plan on fully fleshing this game out and
+            releasing it on Steam.
+          </p>
         </div>
+      </div>
     </div>
-    <br>
-</body>
-
+    <br />
+  </body>
 </html>

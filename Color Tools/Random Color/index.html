@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Random Color</title>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <script src='script.js'></script>
-        <h1 id="myH1">Welcome To Random Color Generator!</h1>
-        <br>
-        <br>
-        <br>
-        <div style="width: 100%;"><p style="  font-size: large;" id="rgb">RGB:</p>
-            <p style="font-size: large;"id="color-rgb">255, 255, 255</p>
-            <button onclick="copyRgb()" class="copy">Copy RGB</button>
+  <head>
+    <title>Random Color</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="container">
+      <h1 class="myH1">Welcome To Random Color Generator!</h1>
+      <div class="colors">
+        <div class="color">
+          <p class="color-type" id="rgb">RGB:</p>
+          <p class="color-value" id="color-rgb">255, 255, 255</p>
+          <button onclick="copyRgb()" class="copy">Copy RGB</button>
         </div>
 
-        <div style="width: 100%;">
-            <p style="  font-size: large;" id="hex">HEX:</p>
-            <p style="  font-size: large;"id="color-hex">#FFFFFF</p>
-            <button onclick="copyHex()" class="copy">Copy HEX</button>
+        <div>
+          <p class="color-type" id="hex">HEX:</p>
+          <p class="color-value" id="color-hex">#FFFFFF</p>
+          <button onclick="copyHex()" class="copy">Copy HEX</button>
         </div>
-        <br>
-        <br>
-        <div style="width: 100%;">
-            <button class="btn" onclick="randomColor()" style="color: white;">Generate A Random Color!</button>
-        </div>
-
-    </body>
+      </div>
+      <div style="width: 100%">
+        <button class="btn" onclick="randomColor()" style="color: white">
+          Generate A Random Color!
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

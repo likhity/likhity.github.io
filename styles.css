@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: white;
+  --color: black;
+  --border-width: 0;
+}
+
 body {
   font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -9,6 +15,10 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
+  color: var(--color);
+  background-color: var(--background-color);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
 }
 
 .header {
@@ -16,7 +26,7 @@ body {
 }
 
 .theme-switch {
-  background-color: black;
+  background-color: rgb(27, 27, 27);
   color: white;
   text-align: center;
   padding: 0.5em 1em;
@@ -24,7 +34,10 @@ body {
   top: 0;
   left: 0;
   font-size: 1.5em;
-  border: 2px solid black;
+  border: 2px solid gray;
+  border-bottom-right-radius: 0.5em;
+  border-top: none;
+  border-left: none;
 }
 
 .theme-switch-title {
@@ -52,7 +65,7 @@ body {
 }
 
 .light-label {
-  color: black;
+  color: rgb(27, 27, 27);
 }
 
 .slider {
@@ -68,12 +81,13 @@ body {
   transition-property: transform, border-color, background-color;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
+  border-radius: 0.3em;
 }
 
 .toggle-theme-checkbox:checked ~ .slider {
   transform: translateX(95%);
-  background-color: black;
-  border-color: white;
+  background-color: rgb(27, 27, 27);
+  border-color: gray;
 }
 
 .title {
@@ -101,12 +115,13 @@ body {
 
 .card {
   --border-radius: 1.5em;
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 17px 40px 0 rgba(0, 0, 0, 0.25);
   font-size: 1.2em;
   cursor: pointer;
   background-color: black;
   color: white;
   transition-property: transform, opacity, color, background-color;
+  border: var(--border-width) solid gray;
   border-radius: var(--border-radius);
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
