@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello! My name is Likhit Vyas Yarramsetti. I am a freshman at ASU studying Computer
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hello! My name is Likhit Vyas Yarramsetti. I am a freshman at ASU studying Computer
     Science. This is a website where I'm just going to dump every programming project that I've ever done. Thank
-    you for taking the time to check out my stuff!">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    you for taking the time to check out my stuff!"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Vyas' Portfolio</title>
-</head>
-
-<body>
-    <br>
-    <h1 style="text-align: center;">Vyas' Portfolio</h1>
-    <div style="margin: 0 auto; text-align: center; font-size: 20px; width: 600px;">
-        <p> Hello! My name is <b>Likhit Vyas Yarramsetti</b>. You can call me <b>Vyas</b>. I am a freshman at ASU
-            studying
-            Computer Science. This is a website where I'm just going to dump every programming project that I've ever
-            done. Thank you for taking the time to check out my stuff!</p>
-        <p> Most of the stuff you'll see here are just my Web Dev projects. Site doesn't have much currently as I'm
-            still working on tons of projects and building my portfolio.</p>
-    </div>
-    <br>
-    <br>
+  </head>
+  <body>
+    <header class="header">
+      <div class="theme-switch">
+        <span class="theme-switch-title">Theme</span>
+        <input
+          type="checkbox"
+          name="theme"
+          id="theme"
+          class="toggle-theme-checkbox"
+        />
+        <label for="theme" class="light-label">Light</label>
+        <label for="theme" class="dark-label">Dark</label>
+        <span class="slider"></span>
+      </div>
+      <h1 class="title">Vyas' Portfolio</h1>
+      <div class="paragraphs">
+        <p>
+          Hello! My name is <b>Likhit Vyas Yarramsetti</b>. You can call me
+          <b>Vyas</b>. I am a sophomore at ASU studying Computer Science. This
+          is a website where I'm just going to dump every programming project
+          that I've ever done. Thank you for taking the time to check out my
+          stuff!
+        </p>
+        <p>
+          Most of the stuff you'll see here are just my Web Dev projects. Site
+          doesn't have much currently as I'm still working on tons of projects
+          and building my portfolio.
+        </p>
+      </div>
+    </header>
     <div class="cards">
-        <div class="card" onclick="window.location = '/JS Games/index.html';">
-            <img src="js.PNG" alt="JS Games" style="width: 100%;" class="card-img">
-            <div class="container">
-                <h3 style="text-align: center;"><b>Javascript Projects</b></h3>
-                <p style="text-align: center;">Some games and stuff I made with Javascript. I'm still learning JS and
-                    it's probably my favorite language so far.
-                </p>
-            </div>
+      <div class="card" onclick="window.location = '/JS Games/index.html';">
+        <img src="js.PNG" class="card-img" alt="JS Games" />
+        <div class="container">
+          <h3 class="card-title">Javascript Projects</h3>
+          <p>
+            Some games and stuff I made with Javascript. I'm still learning JS
+            and it's probably my favorite language so far.
+          </p>
         </div>
-        <div class="card" onclick="window.location = '/Unity Projects/index.html';">
-            <img src="unity.PNG" alt="Color Tools" style="width: 100%; image-rendering: pixelated;" class="card-img">
-            <div class="container">
-                <h3 style="text-align: center;"><b>Unity Projects</b></h3>
-                <p style="text-align: center;">There are just two games I made
-                    with Unity using C#. Still nowhere near an expert in
-                    C#.</p>
-            </div>
+      </div>
+      <div
+        class="card"
+        onclick="window.location = '/Unity Projects/index.html';"
+      >
+        <img src="unity.PNG" alt="Color Tools" class="card-img" />
+        <div class="container">
+          <h3 class="card-title">Unity Projects</h3>
+          <p>
+            There are just two games I made with Unity using C#. Still nowhere
+            near an expert in C#.
+          </p>
         </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
