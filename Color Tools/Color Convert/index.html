@@ -7,28 +7,24 @@
     </head>
     <body>
         <script src="script.js"></script>
-        <h1>Welcome To Color Convert!</h1>
         <div class="copyDiv">
+            <h1 class="title">Welcome To Color Convert!</h1>
             <div class="tooltip">
                 <label class="container">
-                    <input type="checkbox" id="auto-copy">Auto Copy</input>
+                    <input type="checkbox" id="auto-copy" class="auto-copy">Auto Copy</input>
                     <span class="checkmark"></span>
                     <span class="tooltiptext">Use only if pasting</span>
                 </label>
             </div>
-            <br>
-            <br>
-            <div>
+            <div class="color-input">
                 <input class="copy" type="text" placeholder="Type/Paste RGB" id="rgb-input" oninput="changeHex()">
                 <button id="copy-rgb" class="copy" onclick="copyRgb()">Copy RGB</button>
             </div>
-            <br>
-            <div>
+            <div class="color-input">
                 <input class="copy" type="text" placeholder="Type/Paste HEX" id="hex-input" oninput="changeRgb()">
                 <button id="copy-hex" class="copy" onclick="copyHex()">Copy HEX</button>
             </div>
-            <br>
-            <p id="copy-text" style="font-size:20px;" class="copy-text">Copied: </p>
+            <p id="copy-text" class="copy-text">Copied: </p>
             <!-- this is a change -->
         </div>
     </body>

@@ -20,70 +20,70 @@ let div;
 let difficulty = 1;
 
 let buttonsCreated = false;
-s
+
 function preload() {
-  popSound = loadSound('pop.mp3');
-  errorSound = loadSound('error.mp3');
-  successSound = loadSound('success.mp3');
+  popSound = loadSound("pop.mp3");
+  errorSound = loadSound("error.mp3");
+  successSound = loadSound("success.mp3");
 }
 
 var circles = [];
 
 function setup() {
   if (buttonsCreated == false) {
-    div = createDiv('').size(450, 0);
-    button = createButton('Try Again');
-    mainMenuButton = createButton('Go To Main Menu');
+    div = createDiv("").size(450, 0);
+    button = createButton("Try Again");
+    mainMenuButton = createButton("Go To Main Menu");
     harderButton = createButton(difficultyText());
     button.position(0, 355);
     button.mousePressed(playAgain);
-    button.style('background-color', '#7a3aff');
-    button.style('font-family', 'Patrick Hand');
-    button.style('font-size', '20px');
-    button.style('color', '#fff');
-    button.style('padding', "15px 32px");
-    button.style('border', 'none');
+    button.style("background-color", "#7a3aff");
+    button.style("font-family", "Patrick Hand");
+    button.style("font-size", "20px");
+    button.style("color", "#fff");
+    button.style("padding", "15px 32px");
+    button.style("border", "none");
     mainMenuButton.position(135, 445);
     mainMenuButton.mousePressed(mainMenu);
-    mainMenuButton.style('background-color', '#7a3aff');
-    mainMenuButton.style('font-family', 'Patrick Hand');
-    mainMenuButton.style('font-size', '20px');
-    mainMenuButton.style('color', '#fff');
-    mainMenuButton.style('padding', "15px 32px");
-    mainMenuButton.style('border', 'none');
+    mainMenuButton.style("background-color", "#7a3aff");
+    mainMenuButton.style("font-family", "Patrick Hand");
+    mainMenuButton.style("font-size", "20px");
+    mainMenuButton.style("color", "#fff");
+    mainMenuButton.style("padding", "15px 32px");
+    mainMenuButton.style("border", "none");
     mainMenuButton.position(135, 445);
     harderButton.position(165, 355);
     harderButton.mousePressed(harder);
-    harderButton.style('background-color', '#7a3aff');
-    harderButton.style('font-family', 'Patrick Hand');
-    harderButton.style('font-size', '20px');
-    harderButton.style('color', '#fff');
-    harderButton.style('padding', "15px 32px");
-    harderButton.style('border', 'none');
-    button.id('again');
-    harderButton.id('difficultyText');
+    harderButton.style("background-color", "#7a3aff");
+    harderButton.style("font-family", "Patrick Hand");
+    harderButton.style("font-size", "20px");
+    harderButton.style("color", "#fff");
+    harderButton.style("padding", "15px 32px");
+    harderButton.style("border", "none");
+    button.id("again");
+    harderButton.id("difficultyText");
     button.mouseOver(function () {
-      button.style('background-color', '#3D1D7F');
+      button.style("background-color", "#3D1D7F");
     });
     button.mouseOut(function () {
-      button.style('background-color', '#7a3aff');
+      button.style("background-color", "#7a3aff");
     });
     mainMenuButton.mouseOver(function () {
-      mainMenuButton.style('background-color', '#3D1D7F');
+      mainMenuButton.style("background-color", "#3D1D7F");
     });
     mainMenuButton.mouseOut(function () {
-      mainMenuButton.style('background-color', '#7a3aff');
+      mainMenuButton.style("background-color", "#7a3aff");
     });
     harderButton.mouseOver(function () {
-      harderButton.style('background-color', '#3D1D7F');
+      harderButton.style("background-color", "#3D1D7F");
     });
     harderButton.mouseOut(function () {
-      harderButton.style('background-color', '#7a3aff');
+      harderButton.style("background-color", "#7a3aff");
     });
     button.parent(div);
-    button.center('horizontal');
+    button.center("horizontal");
     mainMenuButton.parent(div);
-    mainMenuButton.center('horizontal');
+    mainMenuButton.center("horizontal");
     buttonsCreated = true;
   }
 
@@ -91,7 +91,7 @@ function setup() {
   button.hide();
   mainMenuButton.hide();
   harderButton.parent(div);
-  harderButton.center('horizontal');
+  harderButton.center("horizontal");
   harderButton.hide();
   noStroke();
 
@@ -117,10 +117,8 @@ function draw() {
   }
 
   for (var i = 0; i < circles.length; i++) {
-
     circles[i].move();
     circles[i].display();
-
   }
 
   fill(0);
@@ -129,16 +127,15 @@ function draw() {
   if (timerValue > currentLevelSeconds - 5) {
     text("Catch All The Stars", width / 2, 100);
     text("Before The Time Runs Out!", width / 2, 135);
-  }
-  else {
+  } else {
     text("Level " + difficulty, width / 2, 125);
   }
   textFont("Patrick Hand", 25);
 
   if (timerValue == 0 && points != numberOfStars) {
-    document.getElementById('again').innerHTML = 'Try Again';
+    document.getElementById("again").innerHTML = "Try Again";
     textFont("Patrick Hand", 60);
-    text('game over!', width / 2, height / 2 - 100);
+    text("game over!", width / 2, height / 2 - 100);
     button.show();
     mainMenuButton.show();
     if (!played) {
@@ -150,7 +147,7 @@ function draw() {
   if (points == numberOfStars) {
     background(243);
     textFont("Patrick Hand", 60);
-    text('Good Job!', width / 2, height / 2 - 100);
+    text("Good Job!", width / 2, height / 2 - 100);
     mainMenuButton.show();
     harderButton.show();
     if (!played) {
@@ -170,13 +167,15 @@ function draw() {
   fill(0);
   textFont("Patrick Hand", 25);
   text("Stars Popped: " + points, width / 2, 650);
-
 }
-
 
 function mousePressed() {
   for (var i = 0; i < circles.length; i++) {
-    if (dist(mouseX, mouseY, circles[i].xPos, circles[i].yPos) < (circles[i].diameter / 2 + 10) && timerValue != 0) {
+    if (
+      dist(mouseX, mouseY, circles[i].xPos, circles[i].yPos) <
+        circles[i].diameter / 2 + 10 &&
+      timerValue != 0
+    ) {
       circles.splice(i, 1);
       points++;
       popSound.play();
@@ -206,8 +205,8 @@ DrawCircle.prototype = {
     if (this.yPos - this.diameter / 2 > height) {
       this.yPos = -this.diameter / 2;
     }
-  }
-}
+  },
+};
 
 function star(x, y, radius1, radius2, npoints) {
   let angle = TWO_PI / npoints;
@@ -231,11 +230,11 @@ function star(x, y, radius1, radius2, npoints) {
 // }
 
 function playAgain() {
-  window.location = 'catchTheStars.html';
+  window.location = "catchTheStars.html";
 }
 
 function mainMenu() {
-  window.location = 'index.html';
+  window.location = "index.html";
 }
 
 function harder() {
@@ -246,24 +245,20 @@ function harder() {
   numberOfStars += 5;
   points = 0;
   played = false;
-  document.getElementById('difficultyText').innerHTML = difficultyText();
+  document.getElementById("difficultyText").innerHTML = difficultyText();
   setup();
 }
 
 function difficultyText() {
   if (difficulty == 1) {
     return "Harder?";
-  }
-  else if (difficulty == 2) {
+  } else if (difficulty == 2) {
     return "Even Harder?";
-  }
-  else if (difficulty == 3) {
+  } else if (difficulty == 3) {
     return "Even More Harder?";
-  }
-  else if (difficulty == 4) {
+  } else if (difficulty == 4) {
     return "Extremely Hard?";
-  }
-  else {
+  } else {
     return "Okay, you're hacking.";
   }
 }
@@ -271,8 +266,7 @@ function difficultyText() {
 function randomSpeed() {
   if (difficulty < 4) {
     return random(1, 4);
-  }
-  else {
+  } else {
     return random(2, 5);
   }
 }

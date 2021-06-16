@@ -7,22 +7,23 @@ body {
 .title {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 30px;
   font-size: 2.5rem;
   transform: translate(-50%);
 }
 
 .myDiv {
+  height: 100vh;
   display: flex;
   align-items: center;
-  margin-top: 50%;
+  justify-content: center;
   flex-direction: column;
 }
 
 .btn {
   background-color: rgb(59, 59, 59);
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 2rem 2.5rem;
   margin-bottom: 20px;
   border: none;
   outline: none;

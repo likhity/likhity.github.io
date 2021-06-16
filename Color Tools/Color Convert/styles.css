@@ -1,14 +1,22 @@
 body {
   font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  transition: background-color 250ms;
+  margin: 0;
+}
+
+.title {
+  position: absolute;
+  top: 30px;
+  font-size: 2.5rem;
 }
 
 .copyDiv {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .copy {
@@ -50,7 +58,7 @@ body {
 .checkmark {
   position: absolute;
   top: 0;
-  left: 30%;
+  left: 0%;
   height: 25px;
   width: 25px;
   background-color: #eee;
@@ -92,6 +100,7 @@ body {
 
 .tooltip {
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .tooltip .tooltiptext {
@@ -104,7 +113,7 @@ body {
   z-index: 1;
   width: 120px;
   bottom: 150%;
-  left: 25%;
+  left: -10%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.2s;
@@ -126,6 +135,20 @@ body {
   border-color: lightgrey transparent transparent transparent;
 }
 /* hfruhfih */
+
+.color-input {
+  margin-bottom: 1rem;
+}
+
+.copy {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.copy-text {
+  font-size: 2rem;
+}
 
 button {
   cursor: pointer;
