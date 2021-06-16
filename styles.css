@@ -103,12 +103,12 @@ body {
 }
 
 .cards {
+  width: 100%;
   display: grid;
-  width: 70vw;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(300px, 450px));
   justify-content: center;
-  margin: -1rem 2rem;
+  margin-top: -1rem;
   align-items: start;
   gap: 10px;
 }
@@ -127,6 +127,21 @@ body {
   transition-timing-function: ease-in-out;
   margin: 1rem;
   animation: fly-in 400ms ease-in-out backwards;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: #555;
+  border-radius: 1000px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
 }
 
 .card:hover {
