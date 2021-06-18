@@ -1,4 +1,5 @@
 const themeToggle = document.querySelector(".toggle-theme-checkbox");
+const dividerParagraphs = document.querySelectorAll(".divider-paragraph");
 const LOCAL_STORAGE_KEY = "VYASPORTFOLIO";
 
 const localData = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {
@@ -8,6 +9,17 @@ const localData = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {
 changeTheme(localData.darkTheme);
 themeToggle.checked = localData.darkTheme;
 localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(localData));
+
+const text = dividerParagraphs[0].textContent;
+dividerParagraphs[0].textContent = "";
+
+for (let i = 0; i < text.length; i++) {
+  setTimeout(() => {
+    dividerParagraphs[0].textContent = text.substring(0, i);
+  }, 100);
+}
+
+console.log(dividerParagraphs[0].textContent.length);
 
 themeToggle.addEventListener("change", () => {
   if (themeToggle.checked) {

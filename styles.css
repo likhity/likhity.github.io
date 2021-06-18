@@ -65,7 +65,11 @@ body {
 }
 
 .light-label {
-  color: rgb(27, 27, 27);
+  color: var(--color);
+}
+
+.dark-label {
+  margin-left: 10px;
 }
 
 .slider {
@@ -73,7 +77,7 @@ body {
   height: 1.25em;
   position: absolute;
   background-color: white;
-  top: 43px;
+  top: 41px;
   left: 20px;
   z-index: 0;
   border: 1px solid white;
@@ -85,9 +89,8 @@ body {
 }
 
 .toggle-theme-checkbox:checked ~ .slider {
-  transform: translateX(95%);
+  transform: translateX(111%);
   background-color: rgb(27, 27, 27);
-  border-color: gray;
 }
 
 .title {
@@ -105,7 +108,6 @@ body {
 .cards {
   width: 100%;
   display: grid;
-  grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(300px, 450px));
   justify-content: center;
   margin-top: -1rem;
@@ -129,6 +131,45 @@ body {
   animation: fly-in 400ms ease-in-out backwards;
 }
 
+.card:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.divider {
+  grid-column: 1 / -1;
+  padding: 1rem;
+}
+
+.divider-heading {
+  font-size: 2.5rem;
+}
+
+.divider .divider-paragraph {
+  font-size: 1.25rem;
+}
+
+.bottom-border {
+  display: block;
+  margin-top: 2rem;
+  height: 3px;
+  width: 100%;
+  background-color: #999;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: expand-border 1s forwards;
+}
+
+@keyframes expand-border {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -142,12 +183,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #777;
-}
-
-.card:hover {
-  background-color: white;
-  color: black;
-  transform: scale(1.05);
 }
 
 .container {
@@ -187,7 +222,11 @@ body {
   }
 
   .slider {
-    top: 28px;
+    top: 29px;
     left: 14px;
+  }
+
+  .toggle-theme-checkbox:checked ~ .slider {
+    transform: translateX(117%);
   }
 }
