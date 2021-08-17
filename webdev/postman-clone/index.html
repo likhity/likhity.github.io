@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postman Clone</title>
+    <script src="script.75da7f30.js" type="module"></script>
+    <link rel="stylesheet" href="styles.8986bff4.css" />
+    <script src="styles.8986bff4.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <form class="form">
+        <select class="request-type-dropdown" name="method" id="method">
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="PATCH">PATCH</option>
+          <option value="DELETE">DELETE</option>
+        </select>
+        <input
+          type="text"
+          class="url-text-field"
+          placeholder="Enter request URL"
+          name="url"
+          id="url"
+          autocomplete="off"
+        />
+        <button class="main-button">Send</button>
+      </form>
+      <ul class="nav">
+        <li class="selected">Params</li>
+        <li class="">Headers</li>
+        <li class="">Body</li>
+      </ul>
+      <div class="tabPane params selected">
+        <a href="#" id="create">Add a new parameter...</a>
+      </div>
+      <div class="tabPane headers">
+        <a href="#" id="create">Add a new header...</a>
+      </div>
+      <div class="tabPane body">
+        <textarea name="body" id="body" data-gramm_editor="false"></textarea>
+      </div>
+      <div class="response">
+        <textarea
+          wrap="off"
+          name="response"
+          id="response"
+          class="response-textarea"
+          rows="27"
+          readonly=""
+        ></textarea>
+      </div>
+    </div>
+    <div class="title">
+      <h1>Postman Clone</h1>
+      <p>By Likhit Vyas Yarramsetti</p>
+    </div>
+  </body>
+</html>
