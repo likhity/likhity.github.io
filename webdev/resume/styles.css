@@ -143,9 +143,18 @@ a {
   transform: scale(1.5, 1.5) translate(-7px, -7px);
 }
 
-.information:hover .info-icon {
+.information:not(.email):hover .info-icon {
   transform-origin: top;
   animation: jiggle 500ms ease-in-out forwards;
+}
+
+.information:hover #email-icon-flap {
+  transform-origin: top;
+  animation: email-icon-flap 1s ease-in-out forwards;
+}
+
+.information.email .info-icon {
+  transform: translateY(-7px);
 }
 
 .information a {
@@ -174,6 +183,12 @@ a {
 @keyframes expand {
   from {
     transform: scaleX(0);
+  }
+}
+
+@keyframes email-icon-flap {
+  50% {
+    transform: rotateX(190deg);
   }
 }
 
@@ -259,6 +274,7 @@ a {
 .skills-section-skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill {
@@ -309,7 +325,7 @@ a {
 }
 
 .progress.js {
-  width: 80%;
+  width: 90%;
 }
 
 .progress.react {

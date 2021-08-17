@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            background-color: rgb(179, 179, 179);
-            font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif;
-        }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: rgb(179, 179, 179);
+        font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-        #game-board {
-            background-color: #cccccc;
-            width: 100vmin;
-            height: 100vmin;
-            display: grid;
-            grid-template-rows: repeat(21, 1fr);
-            grid-template-columns: repeat(21, 1fr);
-            /* border: 1px solid black;; */
-        }
+      #game-board {
+        background-color: #cccccc;
+        width: 100vmin;
+        height: 100vmin;
+        display: grid;
+        grid-template-rows: repeat(21, 1fr);
+        grid-template-columns: repeat(21, 1fr);
+        /* border: 1px solid black;; */
+      }
 
-        .snake {
-            background-color: rgb(0, 61, 92);
-            /* border: .25vmin solid black; */
-        }
+      .snake {
+        background-color: rgb(0, 61, 92);
+        /* border: .25vmin solid black; */
+      }
 
-        .food {
-            background-color: rgb(185, 21, 21);
-            /* border: 0.25vmin solid black; */
-        }
+      .food {
+        background-color: rgb(185, 21, 21);
+        /* border: 0.25vmin solid black; */
+      }
 
-        .fail-message {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.4);
-            justify-content: center;
-            align-items: center;
-            color: black;
-            font-size: 5rem;
-            flex-direction: column;
-        }
+      .fail-message {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 5rem;
+        flex-direction: column;
+      }
 
-        .fail-message button {
-            font-size: 3rem;
-            background-color: rgb(0, 61, 92);
-            color: white;
-            padding: 15px 32px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            margin: 25px;
-        }
+      .fail-message button {
+        font-size: 3rem;
+        background-color: rgb(0, 61, 92);
+        color: white;
+        padding: 15px 32px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 25px;
+      }
 
-        .fail-message button:hover {
-            background-color: white;
-            color: black;
-        }
+      .fail-message button:hover {
+        background-color: white;
+        color: black;
+      }
 
-        .fail-message.show {
-            display: flex;
-        }
+      .fail-message.show {
+        display: flex;
+      }
+
+      .score {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 2rem;
+        margin: 1rem;
+      }
     </style>
     <script src="game.js" defer type="module"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <span class="score">1</span>
     <div id="game-board"></div>
     <div class="fail-message" id="failMessage">
-        <div style="color: white;">You lost. Restart?</div>
-        <!-- $#10005; Wins! -->
-        <!-- &#x25EF; Wins! -->
-        <button id="restartButton" style="font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif;">Yes</button>
-        <button id="backButton" style="font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif;">Back</button>
+      <div style="color: white">You lost. Restart?</div>
+      <button
+        id="restartButton"
+        style="font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif"
+      >
+        Yes
+      </button>
+      <button
+        id="backButton"
+        style="font-family: Barlow, Tahoma, Geneva, Verdana, sans-serif"
+      >
+        Back
+      </button>
     </div>
-</body>
-
+  </body>
 </html>
