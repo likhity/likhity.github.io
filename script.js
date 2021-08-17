@@ -10,18 +10,7 @@ changeTheme(localData.darkTheme);
 themeToggle.checked = localData.darkTheme;
 localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(localData));
 
-const text = dividerParagraphs[0].textContent;
-dividerParagraphs[0].textContent = "";
-
-for (let i = 0; i < text.length; i++) {
-  setTimeout(() => {
-    dividerParagraphs[0].textContent = text.substring(0, i);
-  }, 100);
-}
-
-console.log(dividerParagraphs[0].textContent.length);
-
-themeToggle.addEventListener("change", () => {
+themeToggle.addEventListener("click", () => {
   if (themeToggle.checked) {
     changeTheme(true);
     localData.darkTheme = true;
