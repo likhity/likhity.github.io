@@ -30,8 +30,7 @@ body {
 }
 
 .resume-page {
-  width: calc(var(--page-width) * var(--page-scale-factor));
-  height: calc(var(--page-height) * var(--page-scale-factor));
+  max-width: calc(var(--page-width) * var(--page-scale-factor));
   background-color: white;
   box-shadow: 0 16px 32px 0 rgb(0, 0, 0, 0.5);
   margin: 2rem;
@@ -51,6 +50,7 @@ body {
 
 .info-section {
   display: flex;
+  justify-self: center;
 }
 
 .info-section h3 {
@@ -206,16 +206,17 @@ a {
 
 .profile-and-education-section {
   display: flex;
+  justify-content: space-between;
   margin-top: 2.5rem;
 }
 
 .section:first-child {
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   width: 500px;
 }
 
 .section:not(:first-child) {
-  padding-left: 2.5rem;
+  /* padding-left: 2.5rem; */
 }
 
 .section-title {
