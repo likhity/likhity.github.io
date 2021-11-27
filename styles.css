@@ -34,7 +34,6 @@ body {
   top: 0;
   left: 0;
   font-size: 1.5em;
-  border: 2px solid gray;
   border-bottom-right-radius: 0.5em;
   border-top: none;
   border-left: none;
@@ -93,6 +92,33 @@ body {
   background-color: rgb(27, 27, 27);
 }
 
+.my-resume-link {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: var(--color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.1rem;
+}
+
+.my-resume-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color);
+  bottom: -5px;
+  left: 0;
+  transform-origin: left;
+  pointer-events: none;
+}
+
+.my-resume-link:hover::after {
+  animation: expand-border 0.5s ease;
+  color: #ccc;
+}
+
 .title {
   text-align: center;
   font-size: 2.5em;
@@ -110,7 +136,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 450px));
   justify-content: center;
-  margin-top: -1rem;
+  margin-top: -5rem;
   align-items: start;
   gap: 10px;
 }
@@ -142,8 +168,19 @@ body {
   padding: 1rem;
 }
 
+.divider:hover > .bottom-border {
+  animation: scale-x 1.5s ease;
+}
+
+@keyframes scale-x {
+  from {
+    transform: scaleX(0);
+  }
+}
+
 .divider-heading {
   font-size: 2.5rem;
+  margin: 0;
 }
 
 .divider .divider-paragraph {
@@ -156,7 +193,6 @@ body {
   height: 3px;
   width: 100%;
   background-color: #999;
-  transform: scaleX(0);
   transform-origin: left;
   animation: expand-border 1s forwards;
 }
@@ -164,9 +200,6 @@ body {
 @keyframes expand-border {
   from {
     transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
   }
 }
 
@@ -219,6 +252,10 @@ body {
 
   .theme-switch {
     font-size: 1em;
+  }
+
+  .my-resume-link {
+    font-size: 1.1rem;
   }
 
   .slider {
