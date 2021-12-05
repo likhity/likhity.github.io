@@ -1,5 +1,6 @@
 const themeToggle = document.querySelector(".toggle-theme-checkbox");
 const dividerParagraphs = document.querySelectorAll(".divider-paragraph");
+const dividers = document.querySelectorAll(".divider .bottom-border");
 const LOCAL_STORAGE_KEY = "VYASPORTFOLIO";
 
 const localData = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {
@@ -19,6 +20,22 @@ themeToggle.addEventListener("click", () => {
     localData.darkTheme = false;
   }
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(localData));
+});
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (
+      entry.isIntersecting &&
+      !entry.target.classList.contains("anim-expand")
+    ) {
+      entry.target.classList.add("anim-expand");
+    }
+  });
+}, {});
+
+dividers.forEach((divider) => {
+  observer.observe(divider);
 });
 
 function changeTheme(darkTheme) {

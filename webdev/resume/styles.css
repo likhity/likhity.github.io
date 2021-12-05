@@ -9,9 +9,9 @@ body {
 }
 
 :root {
-  --page-width: 850px;
-  --page-height: 1100px;
-  --page-scale-factor: 1.5;
+  --page-width: 8.5;
+  --page-height: 11;
+  --page-scale-factor: 150px;
   --accent-color-hue: 241;
   --accent-color-saturation: 50%;
   --accent-color-lightness: 50%;
@@ -31,6 +31,7 @@ body {
 
 .resume-page {
   max-width: calc(var(--page-width) * var(--page-scale-factor));
+  height: calc(var(--page-height) * var(--page-scale-factor));
   background-color: white;
   box-shadow: 0 16px 32px 0 rgb(0, 0, 0, 0.5);
   margin: 2rem;
@@ -215,6 +216,10 @@ a {
   width: 500px;
 }
 
+.section:not(:first-child) {
+  margin-left: 50px;
+}
+
 .section-title {
   font-weight: normal;
   font-size: 3rem;
@@ -324,18 +329,14 @@ a {
   width: 90%;
 }
 
-.progress.react {
+/* .progress.react {
   width: 25%;
 }
 
 .progress.testing {
   width: 40%;
-}
+} */
 
-.progress.communication {
-  width: 95%;
-}
-
-.progress.detail {
-  width: 95%;
+.progress.men-stack {
+  width: 60%;
 }

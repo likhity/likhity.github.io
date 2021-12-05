@@ -116,7 +116,6 @@ body {
 
 .my-resume-link:hover::after {
   animation: expand-border 0.5s ease;
-  color: #ccc;
 }
 
 .title {
@@ -136,7 +135,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 450px));
   justify-content: center;
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
   align-items: start;
   gap: 10px;
 }
@@ -168,10 +167,6 @@ body {
   padding: 1rem;
 }
 
-.divider:hover > .bottom-border {
-  animation: scale-x 1.5s ease;
-}
-
 @keyframes scale-x {
   from {
     transform: scaleX(0);
@@ -194,12 +189,20 @@ body {
   width: 100%;
   background-color: #999;
   transform-origin: left;
-  animation: expand-border 1s forwards;
+  transform: scaleX(0);
+}
+
+.anim-expand {
+  animation: expand-border 1.5s ease forwards;
 }
 
 @keyframes expand-border {
   from {
     transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
   }
 }
 
