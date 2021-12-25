@@ -4,6 +4,10 @@ body {
   margin: 0;
   transition-property: background-color;
   transition-duration: 100ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 .btn {
@@ -13,7 +17,6 @@ body {
   text-align: center;
   border: none;
   outline: none;
-  margin-top: 5rem;
   font-size: 3rem;
   font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -33,7 +36,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 20rem;
 }
 
 .colors {
