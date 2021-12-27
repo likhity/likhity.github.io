@@ -127,7 +127,13 @@ body {
 .paragraphs {
   max-width: 700px;
   font-size: 1.25em;
-  text-align: center;
+  /* text-align: center; */
+  line-height: 2rem;
+}
+
+.card-wrapper-link {
+  text-decoration: none;
+  margin: 0;
 }
 
 .cards {

@@ -15,60 +15,11 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <title>Vyas' Portfolio</title>
+    <title>Vyas' Project Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <div class="theme-switch">
-        <span class="theme-switch-title">Theme</span>
-        <input
-          type="checkbox"
-          name="theme"
-          id="theme"
-          class="toggle-theme-checkbox"
-          checked
-        />
-        <label for="theme" class="light-label">Light</label>
-        <label for="theme" class="dark-label">Dark</label>
-        <span class="slider"></span>
-      </div>
-      <h1 class="title">Vyas' Portfolio</h1>
-      <div class="paragraphs">
-        <p>
-          Hello! My name is <b>Likhit Vyas Yarramsetti</b>. You can call me
-          <b>Vyas</b>. I am a sophomore at ASU studying Computer Science. This
-          is a website where I'm just going to dump every programming project
-          that I've ever done. Thank you for taking the time to check out my
-          stuff!
-        </p>
-        <p>
-          Most of the stuff you'll see here are just my Web Dev projects. Site
-          doesn't have much currently as I'm still working on tons of projects
-          and building my portfolio.
-        </p>
-      </div>
-    </header>
-    <div class="cards">
-      <div class="card" onclick="window.location = '/webdev';">
-        <img src="js.PNG" class="card-img" alt="JS Games" />
-        <div class="container">
-          <h3 class="card-title">Web Dev Projects</h3>
-          <p>
-            Some games and stuff I made with Javascript. I'm still learning JS
-            and it's probably my favorite language so far.
-          </p>
-        </div>
-      </div>
-      <div class="card" onclick="window.location = '/unity';">
-        <img src="unity.PNG" alt="Color Tools" class="card-img" />
-        <div class="container">
-          <h3 class="card-title">Unity Projects</h3>
-          <p>
-            There are just two games I made with Unity using C#. Still nowhere
-            near an expert in C#.
-          </p>
-        </div>
-      </div>
-    </div>
+    <script>
+      window.location = "/webdev";
+    </script>
   </body>
 </html>

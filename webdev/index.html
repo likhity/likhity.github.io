@@ -36,9 +36,19 @@
       <a class="my-resume-link" href="/webdev/Likhit_Vyas_Resume_Updated.pdf"
         >My Résumé</a
       >
-      <h1 class="title">Vyas' Web Dev Projects</h1>
+      <h1 class="title">Vyas' Project Portfolio</h1>
       <div class="paragraphs">
-        <p>This is a collection of all of my web development projects.</p>
+        <p>
+          Hello! My name is Likhit Vyas Yarramsetti. You can call me Vyas. I am
+          a sophomore at ASU studying Computer Science. This is a website where
+          I'm just going to dump every programming project that I've ever done.
+          Thank you for taking the time to check out my stuff!
+        </p>
+        <p>
+          Most of the stuff you'll see here are my web development projects.
+          Site doesn't have much currently as I'm still working on tons of
+          projects and building my portfolio.
+        </p>
       </div>
     </header>
     <div class="cards">
@@ -47,58 +57,60 @@
         <p class="divider-paragraph">Large projects that took more time.</p>
         <span class="bottom-border"></span>
       </div>
-
-      <div
-        class="card"
-        onclick="window.location = `https://github.com/likhity/asu-course-tracker`"
+      <a
+        href="https://github.com/likhity/asu-course-tracker"
+        class="card-wrapper-link"
       >
-        <img
-          src="asu_course_tracker.PNG"
-          alt="ASU Course Tracker"
-          class="card-img"
-        />
-        <div class="container">
-          <h3 class="card-title">ASU Course Tracker</h3>
-          <p>
-            A way for students at ASU to track the number of seats available for
-            a course.
-          </p>
-          <p>
-            A text is sent to the user whenever the number of seats changes.
-          </p>
-          <p>Built using Node.js, Express, EJS, and MongoDB.</p>
+        <div class="card">
+          <img
+            src="asu_course_tracker.PNG"
+            alt="ASU Course Tracker"
+            class="card-img"
+          />
+          <div class="container">
+            <h3 class="card-title">ASU Course Tracker</h3>
+            <p>
+              A way for students at ASU to track the number of seats available
+              for a course.
+            </p>
+            <p>
+              A text is sent to the user whenever the number of seats changes.
+            </p>
+            <p>Built using Node.js, Express, EJS, and MongoDB.</p>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <div
-        class="card"
-        onclick="window.location = 'the-burger-center/index.html';"
-      >
-        <img
-          src="the-burger-center.png"
-          alt="The Burger Center"
-          class="card-img"
-        />
-        <div class="container">
-          <h3 class="card-title">The Burger Center</h3>
-          <p>
-            A landing page for a fake restaurant titled "The Burger Center".
-          </p>
-          <p>Built with React and zero CSS frameworks.</p>
+      <a href="the-burger-center/index.html" class="card-wrapper-link">
+        <div class="card">
+          <img
+            src="the-burger-center.png"
+            alt="The Burger Center"
+            class="card-img"
+          />
+          <div class="container">
+            <h3 class="card-title">The Burger Center</h3>
+            <p>
+              A landing page for a fake restaurant titled "The Burger Center".
+            </p>
+            <p>Built with React and zero CSS frameworks.</p>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <div class="card" onclick="window.location = 'postman-clone/index.html';">
-        <img src="postman-clone.PNG" alt="Postman Clone" class="card-img" />
-        <div class="container">
-          <h3 class="card-title">Postman Clone</h3>
-          <p>A clone of the API tester Postman.</p>
-          <p>
-            Made with zero front-end or CSS frameworks. UI functionality was
-            built entirely with Javascript.
-          </p>
+      <a href="postman-clone/index.html" class="card-wrapper-link">
+        <div class="card">
+          <img src="postman-clone.PNG" alt="Postman Clone" class="card-img" />
+          <div class="container">
+            <h3 class="card-title">Postman Clone</h3>
+            <p>A clone of the API tester Postman.</p>
+            <p>
+              Made with zero front-end or CSS frameworks. UI functionality was
+              built entirely with Javascript.
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
 
       <div class="divider">
         <h2 class="divider-heading">Old Projects</h2>
@@ -110,59 +122,105 @@
         <span class="bottom-border"></span>
       </div>
 
-      <div class="card" onclick="window.location = 'Snake/index.html';">
-        <img src="snake.png" alt="JS Games" class="card-img" />
-        <div class="container">
-          <h3 class="card-title">Snake</h3>
-          <p>Simple Snake game.</p>
+      <a href="Snake/index.html" class="card-wrapper-link">
+        <div class="card">
+          <img src="snake.png" alt="JS Games" class="card-img" />
+          <div class="container">
+            <h3 class="card-title">Snake</h3>
+            <p>Simple Snake game.</p>
+          </div>
         </div>
-      </div>
-      <div class="card" onclick="window.location = 'Tic Tac Toe/index.html';">
-        <img src="tictactoe.PNG" alt="Color Tools" class="card-img" />
-        <div class="container">
-          <h3 class="card-title">Tic Tac Toe</h3>
-          <p>Simple Tic Tac Toe game.</p>
+      </a>
+      <a href="Tic Tac Toe/index.html" class="card-wrapper-link">
+        <div class="card">
+          <img src="tictactoe.PNG" alt="Color Tools" class="card-img" />
+          <div class="container">
+            <h3 class="card-title">Tic Tac Toe</h3>
+            <p>Simple Tic Tac Toe game.</p>
+          </div>
         </div>
-      </div>
-      <div
-        class="card"
-        onclick="window.location = 'Motor Skillz App/index.html';"
-      >
-        <img src="motorskillz.PNG" alt="JS Games" class="card-img" />
-        <div class="container">
-          <h3 class="card-title"><b>Motor Skillz</b></h3>
-          <p>
-            Simple game I created for my college Engineering class using p5*js
-            library.
-          </p>
-          <p>
-            The goal of the project was to create an app that toddlers can use
-            to improve their fine motor skills.
-          </p>
-          <p>The title is genius, I know.</p>
+      </a>
+      <a href="Motor Skillz App/index.html" class="card-wrapper-link">
+        <div class="card">
+          <img src="motorskillz.PNG" alt="JS Games" class="card-img" />
+          <div class="container">
+            <h3 class="card-title"><b>Motor Skillz</b></h3>
+            <p>
+              Simple game I created for my college Engineering class using p5*js
+              library.
+            </p>
+            <p>
+              The goal of the project was to create an app that toddlers can use
+              to improve their fine motor skills.
+            </p>
+            <p>The title is genius, I know.</p>
+          </div>
         </div>
-      </div>
-      <div class="card" onclick="window.location = '/Color Tools/index.html';">
-        <img src="colortools.PNG" alt="JS Games" class="card-img" />
-        <div class="container">
-          <h3 class="card-title"><b>Color Tools</b></h3>
-          <p>Some tools for working with colors.</p>
-          <p>
-            Created these to increase my productivity when I was working on the
-            Motor Skillz App.
-          </p>
+      </a>
+      <a href="/Color Tools/index.html" class="card-wrapper-link">
+        <div
+          class="card"
+          onclick="window.location = '/Color Tools/index.html';"
+        >
+          <img src="colortools.PNG" alt="JS Games" class="card-img" />
+          <div class="container">
+            <h3 class="card-title"><b>Color Tools</b></h3>
+            <p>Some tools for working with colors.</p>
+            <p>
+              Created these to increase my productivity when I was working on
+              the Motor Skillz App.
+            </p>
+          </div>
         </div>
-      </div>
-      <div
-        class="card"
-        onclick="window.location = 'EightByEightGrid/index.html';"
-      >
-        <img src="grid.PNG" alt="Grid" class="card-img" />
-        <div class="container">
-          <h3 class="card-title"><b>Eight By Eight Grid</b></h3>
-          <p>Just a little thing I created for a school math project.</p>
+      </a>
+      <a href="EightByEightGrid/index.html" class="card-wrapper-link">
+        <div class="card">
+          <img src="grid.PNG" alt="Grid" class="card-img" />
+          <div class="container">
+            <h3 class="card-title"><b>Eight By Eight Grid</b></h3>
+            <p>Just a little thing I created for a school math project.</p>
+          </div>
         </div>
+      </a>
+
+      <div class="divider">
+        <h2 class="divider-heading">Unity Projects</h2>
+        <p class="divider-paragraph">
+          Some games that I built with the Unity game engine, written with C#.
+        </p>
+        <p class="divider-paragraph">
+          You can click on the card the download the .zip folder of the game,
+          extract the files, and run the .exe file in the folder.
+        </p>
+        <span class="bottom-border"></span>
       </div>
+
+      <a href="Falling Blocks.zip" class="card-wrapper-link">
+        <div class="card" onclick="window.location = 'Falling Blocks.zip';">
+          <img src="block.PNG" alt="Falling Blocks" class="card-img" />
+          <div class="container">
+            <h3 class="card-title"><b>Falling Blocks</b></h3>
+            <p>Incredibly simple game I made when I first learning Unity.</p>
+          </div>
+        </div>
+      </a>
+      <a href="Infiltrate.zip" class="card-wrapper-link">
+        <div class="card">
+          <img
+            src="unity.PNG"
+            alt="Shoot Em Up"
+            style="width: 100%"
+            class="card-img"
+          />
+          <div class="container">
+            <h3 class="card-title">Shoot Em Up</h3>
+            <p>
+              Basic FPS game. I initially planned on fully fleshing this game
+              out and releasing it on Steam, but then I went towards web dev.
+            </p>
+          </div>
+        </div>
+      </a>
     </div>
   </body>
 </html>
