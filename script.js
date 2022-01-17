@@ -38,6 +38,9 @@ dividers.forEach((divider) => {
   observer.observe(divider);
 });
 
+const copyright = document.getElementById("copyright-year");
+copyright.textContent = new Date().getFullYear();
+
 function changeTheme(darkTheme) {
   if (darkTheme) {
     setDocumentProperty("--background-color", "rgb(27, 27, 27)");

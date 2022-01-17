@@ -137,8 +137,9 @@ body {
 }
 
 .cards {
-  width: 90%;
+  max-width: 1250px;
   columns: 350px;
+  margin: 0 3rem 0 3rem;
   column-gap: 2em;
 }
 
@@ -257,6 +258,15 @@ body {
   width: 100%;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
+}
+
+.footer {
+  width: 90%;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+  padding: 2rem;
+  border-top: 3px solid #999;
 }
 
 @keyframes fly-in {
