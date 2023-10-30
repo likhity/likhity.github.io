@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Parks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="Parks.xsd">
+    <Park type="National Park">
+        <Owner>Federal Government</Owner>
+        <Name>Saguaro National Park</Name>
+        <Reservation>
+            <Address>3693 South Old Spanish Trail Tucson, AZ 85730</Address>
+            <Url>www.nps.gov/sagu</Url>
+        </Reservation> 
+        <NeighboringStates>
+            <State>Arizona</State>
+            <State>California</State>
+            <State>Utah</State>
+            <State>Nevada</State>
+            <State>New Mexico</State>
+        </NeighboringStates>
+        <EstablishedIn Founder="Hoover">1994</EstablishedIn>
+    </Park>
+    <Park type="National Park">
+        <Owner>Federal Government</Owner>
+        <Name>Death Valley</Name>
+        <Reservation>
+            <Address>California 92328</Address>
+            <Url>www.nps.gov/deva</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>California</State>
+            <State>Oregon</State>
+            <State>Nevada</State>
+            <State>Arizona</State>
+        </NeighboringStates>
+        <EstablishedIn Founder="Hoover">1994</EstablishedIn>
+    </Park>
+    <Park type="City Park">
+        <Owner>New York</Owner>
+        <Name>Central Park</Name>
+        <Reservation>
+            <Address>New York, NY</Address>
+            <Url>www.centralparknyc.org/</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>New York</State>
+            <State>Vermont</State>
+            <State>Massachusetts</State>
+            <State>Connecticut</State>
+            <State>New Jersey</State>
+            <State>Pennsylvania</State>
+        </NeighboringStates>
+        <EstablishedIn Founder="Frederick Law Olmsted">1858</EstablishedIn>
+    </Park>
+    <Park type="National Park">
+        <Owner>Federal Government</Owner>
+        <Name>Acadia National Park</Name>
+        <Reservation>
+            <Address>25 Visitor Center Rd, Bar Harbor, ME 04609</Address>
+            <Url>www.nps.gov/acad</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>Maine</State>
+            <State>New Hampshire</State>
+        </NeighboringStates>
+        <EstablishedIn>1919</EstablishedIn>
+    </Park>
+    <Park type="National Park">
+        <Owner>Federal Government</Owner>
+        <Name>Black Canyon of the Gunnison National Park</Name>
+        <Reservation>
+            <Address>Montrose County, CO</Address>
+            <Url>www.nps.gov/blca</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>Colorado</State>
+            <State>Wyoming</State>
+            <State>Nebraska</State>
+            <State>Kansas</State>
+            <State>Oklahoma</State>
+            <State>New Mexico</State>
+            <State>Utah</State>
+            <State>Arizona</State>
+        </NeighboringStates>
+        <EstablishedIn>1999</EstablishedIn>
+    </Park>
+    <Park type="State Park">
+        <Owner>State of California</Owner>
+        <Name>MacKerricher State Park</Name>
+        <Reservation>
+            <Address>Mendocino County, CA</Address>
+            <Url>www.parks.ca.gov/?page_id=436</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>California</State>
+            <State>Oregon</State>
+            <State>Nevada</State>
+            <State>Arizona</State>
+        </NeighboringStates>
+        <EstablishedIn>1952</EstablishedIn>
+    </Park>
+    <Park type="Campground">
+        <Owner>State of California</Owner>
+        <Name>Reynolds Wayside Campground</Name>
+        <Reservation>
+            <Address>1600 US-101 #8, Garberville, CA 95542</Address>
+            <Url>www.parks.ca.gov/?page_id=428</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>California</State>
+            <State>Oregon</State>
+            <State>Nevada</State>
+            <State>Arizona</State>
+        </NeighboringStates>
+        <EstablishedIn>1984</EstablishedIn>
+    </Park>
+    <Park type="State Park">
+        <Owner>State of Wyoming</Owner>
+        <Name>Curt Gowdy State Park</Name>
+        <Reservation>
+            <Address>1264 Granite Springs Rd, Cheyenne, WY 82009</Address>
+            <Url>wyoparks.wyo.gov/index.php/places-to-go/curt-gowdy</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>Wyoming</State>
+            <State>South Dakota</State>
+            <State>Nebraska</State>
+            <State>Colorado</State>
+            <State>Utah</State>
+            <State>Idaho</State>
+        </NeighboringStates>
+        <EstablishedIn>1971</EstablishedIn>
+    </Park>
+    <Park type="State Park">
+        <Owner>State of Florida</Owner>
+        <Name>Florida Caverns State Park</Name>
+        <Reservation>
+            <Address>3345 Caverns Rd, Marianna, FL 32446</Address>
+            <Url>www.floridastateparks.org/parks-and-trails/florida-caverns-state-park</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>Florida</State>
+            <State>Georgia</State>
+            <State>Alabama</State>
+        </NeighboringStates>
+        <EstablishedIn>1942</EstablishedIn>
+    </Park>
+    <Park type="State Park">
+        <Owner>State of Delaware</Owner>
+        <Name>Cape Henlopen State Park</Name>
+        <Reservation>
+            <Address>15099 Cape Henlopen Dr, Lewes, DE 19958</Address>
+            <Url>destateparks.com/Beaches/CapeHenlopen</Url>
+        </Reservation>
+        <NeighboringStates>
+            <State>Delware</State>
+            <State>Pennsylvania</State>
+            <State>New Jersey</State>
+            <State>Maryland</State>
+        </NeighboringStates>
+        <EstablishedIn>1964</EstablishedIn>
+    </Park>
+</Parks>

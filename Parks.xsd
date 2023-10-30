@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="Parks" type="ParksType"></xsd:element>
+
+  <xsd:complexType name="ParksType">
+    <xsd:sequence>
+        <xsd:element name="Park" type="ParkDetails" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ParkDetails">
+    <xsd:sequence>
+        <xsd:element name="Owner" type="xsd:string" minOccurs="1" maxOccurs="1" />
+        <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1" />
+        <xsd:element name="Reservation" type="ReservationType" minOccurs="1" maxOccurs="1" />
+        <xsd:element name="NeighboringStates" type="NeighboringStatesType" minOccurs="1" maxOccurs="1" />
+        <xsd:element name="EstablishedIn" type="EstablishedInType" minOccurs="1" maxOccurs="1" />
+    </xsd:sequence>
+    <xsd:attribute name="type" type="xsd:string" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="ReservationType">
+    <xsd:sequence>
+        <xsd:element name="Address" type="xsd:string" minOccurs="1" maxOccurs="1" />
+        <xsd:element name="Url" type="xsd:string" minOccurs="1" maxOccurs="1" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="NeighboringStatesType">
+    <xsd:sequence>
+        <xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+    <xsd:complexType name="EstablishedInType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:positiveInteger">
+                <xsd:attribute name="Founder" type="xsd:string" use="optional"></xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+</xsd:schema>
