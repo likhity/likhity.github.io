@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Parks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="Parks.xsd">
+<Parks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Park type="National Park">
         <Owner>Federal Government</Owner>
         <Name>Saguaro National Park</Name>
